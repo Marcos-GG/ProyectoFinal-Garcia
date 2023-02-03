@@ -1,0 +1,102 @@
+.fondoNubes {
+    background-image:url(../img/galeria/cieloNubes_1.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+
+    .container {
+       text-align: center;
+    
+        h1 {
+        font-size: 3.2em;
+        color: rgb(241, 241, 241);
+    }
+    }
+
+
+        #galeria
+        {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows:repeat(9, 550px);
+            padding: 25px;
+            grid-template-areas: 
+            "fotA"
+            "fotB"
+            "fotC"
+            "fotD"
+            "fotE"
+            "fotF"
+            "fotG"
+            "fotH"
+            "fotI"
+            "fotJ"; 
+            
+            img {
+                border-radius: 25px;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                object-fit: cover;
+                transition: all 500ms ease;
+                
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(50%);}
+            
+            }
+            .fot-a {grid-area: fotA;}
+            .fot-b {grid-area: fotB;}
+            .fot-c {grid-area: fotC;}
+            .fot-d {grid-area: fotD;}
+            .fot-e {grid-area: fotE;}
+            .fot-f {grid-area: fotF;}
+            .fot-g {grid-area: fotG;}
+            .fot-h {grid-area: fotH;}
+            .fot-i {grid-area: fotI;}
+            .fot-j {grid-area: fotJ;}
+
+            @media (min-width: 769px) {
+                    
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: repeat(3, 400px);
+                grid-template-areas: 
+                    "fotA fotD"
+                    "fotA fotE"
+                    "fotB fotF"
+                    "fotB fotG"
+                    "fotC fotH"
+                    "fotC fotI"
+                        ;
+                    }
+
+            @media (min-width: 769px) {
+                    
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: repeat(3, 400px);
+                grid-template-areas: 
+                    "fotA fotD"
+                    "fotA fotE"
+                    "fotB fotF"
+                    "fotB fotG"
+                    "fotC fotH"
+                    "fotC fotI"
+                        ;
+                        }
+
+            @media (min-width: 1200px) {
+                    grid-template-columns: 1fr 2fr 1fr;
+                    grid-template-rows: repeat(4, 500px);
+                    grid-template-areas: 
+                        "fotA fotB fotC"
+                        "fotA fotD fotE"
+                        "fotF fotF fotG"
+                        "fotH fotI fotI"
+                            ;
+                        }
+
+        }
+}
+
+
