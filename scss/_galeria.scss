@@ -10,7 +10,7 @@
     
         h1 {
         font-size: 3.2em;
-        color: rgb(241, 241, 241);
+        color: rgba(34, 32, 32, 0.726);
     }
     }
 
@@ -21,6 +21,7 @@
             grid-template-columns: 1fr;
             grid-template-rows:repeat(9, 550px);
             padding: 25px;
+ 
             grid-template-areas: 
             "fotA"
             "fotB"
@@ -40,6 +41,7 @@
                 padding: 10px;
                 object-fit: cover;
                 transition: all 500ms ease;
+               
                 
                 &:hover {
                     cursor: pointer;

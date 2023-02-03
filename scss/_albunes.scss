@@ -10,13 +10,17 @@
         font-size: 3rem;
         text-align: center;
         color: white;
+            
+            @media (max-width: 776px) { font-size: 2.3rem}
     }
 
  .textoInformativo {
             margin-left: 20px;
-            font-size: 2em;
+            font-size: 1.7em;
             color: white;
             font-weight: 300;
+                
+                @media (max-width: 776px) { font-size: 1.4em;}
         }
 
     .cardsConteiner{
@@ -27,17 +31,22 @@
         justify-content: center;
         flex-wrap: wrap;
         overflow: auto;
+        margin-top: 90px;
 
-            .haha {
+            .grupoCards {
                 width: 85%;
+                height: 85%;
                 flex-wrap: wrap;
                 display: flex;
                 justify-content: center;
                 gap: 20px;
-
-                .agagasgasgasfasgasgf {
                 
+
+                .hhh {
                     width: 20em;
+                    
+                        @media (max-width: 776px) {width: 17em;}
+                        @media (max-width: 663px) {width: 90%;}
 
                     .cards {
                         width: 100%;

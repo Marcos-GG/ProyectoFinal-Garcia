@@ -10,7 +10,7 @@
 }
 .fondoNubes .container h1 {
   font-size: 3.2em;
-  color: rgb(241, 241, 241);
+  color: rgba(34, 32, 32, 0.726);
 }
 .fondoNubes #galeria {
   display: grid;
@@ -135,11 +135,21 @@
   text-align: center;
   color: white;
 }
+@media (max-width: 776px) {
+  .fondoAlbunes .tituloAlbun {
+    font-size: 2.3rem;
+  }
+}
 .fondoAlbunes .textoInformativo {
   margin-left: 20px;
-  font-size: 2em;
+  font-size: 1.7em;
   color: white;
   font-weight: 300;
+}
+@media (max-width: 776px) {
+  .fondoAlbunes .textoInformativo {
+    font-size: 1.4em;
+  }
 }
 .fondoAlbunes .cardsConteiner {
   width: 100%;
@@ -149,18 +159,30 @@
   justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
+  margin-top: 90px;
 }
-.fondoAlbunes .cardsConteiner .haha {
+.fondoAlbunes .cardsConteiner .grupoCards {
   width: 85%;
+  height: 85%;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.fondoAlbunes .cardsConteiner .haha .agagasgasgasfasgasgf {
+.fondoAlbunes .cardsConteiner .grupoCards .hhh {
   width: 20em;
 }
-.fondoAlbunes .cardsConteiner .haha .agagasgasgasfasgasgf .cards {
+@media (max-width: 776px) {
+  .fondoAlbunes .cardsConteiner .grupoCards .hhh {
+    width: 17em;
+  }
+}
+@media (max-width: 663px) {
+  .fondoAlbunes .cardsConteiner .grupoCards .hhh {
+    width: 90%;
+  }
+}
+.fondoAlbunes .cardsConteiner .grupoCards .hhh .cards {
   width: 100%;
 }
 
@@ -388,7 +410,7 @@
 }
 
 .home {
-  background-image: url("../img/principal/dukiiii.jpg");
+  background-image: url("../img/principal/dukiiii.webp");
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
@@ -665,6 +687,7 @@
 }
 .footermap .maps ul li {
   margin: 10px 0;
+  text-decoration: underline;
 }
 .footermap .maps img {
   width: 400px;
